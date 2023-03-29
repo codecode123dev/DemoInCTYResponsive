@@ -184,8 +184,7 @@
 
         /* Main content  */
         .head-main-content {
-            width: 1116px;
-            height: 175px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             border: solid 1px red;
@@ -195,8 +194,7 @@
 
         .breadcrumb {
 
-            width: 1110px;
-            height: 30px;
+            /* height: 30px; */
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -215,8 +213,8 @@
         }
 
         .option-main-content {
-            width: 1110px;
-            height: 30px;
+            /* width: 1110px;
+            height: 30px; */
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -284,15 +282,21 @@
             padding: 0;
             margin: 0;
         }
-        .detail-product{
+
+        .detail-product {
             font-size: 2.5rem;
-            margin-top: 45px;  
+            margin-top: 45px;
             margin-bottom: 30px;
         }
 
         /* end product-main-content */
         /* option-product */
 
+        .option-product{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         /* brand */
 
         .option-product-detail-brand {
@@ -309,13 +313,15 @@
             padding: 20px;
             border-bottom: 2px solid #EDEFF2;
         }
-        .checkbox-left-brand{
+
+        .checkbox-left-brand {
             display: flex;
             flex-direction: column;
             gap: 20px;
 
         }
-        .detail-option-brand{
+
+        .detail-option-brand {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -323,21 +329,24 @@
             padding: 25px;
             gap: 30px;
         }
-        .checkbox-right-brand{
+
+        .checkbox-right-brand {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
+
         /* end brand */
         /* Memory */
-        .head-option-product-memory{
+        .head-option-product-memory {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 20px;
             border-bottom: 2px solid #EDEFF2;
         }
-        .detail-option-memory{
+
+        .detail-option-memory {
             display: flex;
             flex-direction: row;
             padding: 25px;
@@ -345,12 +354,14 @@
             justify-content: space-between;
 
         }
-        .checkbox-right-memory{
+
+        .checkbox-right-memory {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        .checkbox-left-memory{
+
+        .checkbox-left-memory {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -358,17 +369,24 @@
 
         /* end Memory */
 
-        .fa-chevron-down{
+        .fa-chevron-down {
             font-size: 1.5rem;
         }
 
         /* Price */
         /* range two  input */
+        .range {
+            margin-top: 20px;
+        }
+
         .range-slider {
             height: 5px;
             position: relative;
             background-color: #e1e9f6;
             border-radius: 2px;
+            left: 22%;
+            /* width: 152px;
+            right: 16px; */
         }
 
         .range-selected {
@@ -393,6 +411,7 @@
             pointer-events: none;
             -webkit-appearance: none;
             -moz-appearance: none;
+            left: 22%;
         }
 
         .range-input input::-webkit-slider-thumb {
@@ -421,6 +440,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: absolute;
         }
 
         .range-price label {
@@ -428,43 +448,227 @@
         }
 
         .range-price input {
-            width: 88px;
+            width: 55px;
             padding: 5px;
         }
 
         .range-price input:first-of-type {
             margin-right: 15px;
         }
-        .option-product-detail-price{
+
+        .option-product-detail-price {
             height: 200px;
             border: solid 1px green;
         }
-        .head-option-product-price{
-            display:  flex;
+
+        .head-option-product-price {
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 25px;
             border-bottom: 2px solid #EDEFF2;
         }
-        
+
 
         /* end range two input */
         /* end price */
         /* Color */
-        .option-product-detail-color{
+        .option-product-detail-color {
             display: flex;
             flex-direction: column;
-            padding: 25px;
-            height: 300px;
-            border: solid 1px gold;
+            /* height: 300px; */
+            border: solid 1px rgb(157, 0, 255);
         }
-        .head-option-product-color{
+
+        .head-option-product-color {
             display: flex;
             flex-direction: row;
             padding: 25px;
             justify-content: space-between;
+            /* border-bottom: #99A6BF; */
+            border-bottom: 2px solid #EDEFF2;
         }
+
+        .color-detail-all {
+            /* display: flex; */
+            padding: 25px;
+            /* border: solid 1px red; */
+        }
+
+        .row-color-one {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            /* gap: 10%; */
+            /* padding: 25px; */
+
+        }
+
+        .row-color-two {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            /* gap: 10%; */
+            /* padding: 25px; */
+
+        }
+
+        .row-color-three {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            /* gap: 10%; */
+            /* padding: 25px; */
+
+        }
+
+        .row-color-four {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            /* gap: 10%; */
+            /* padding: 25px; */
+
+        }
+
         /* end color */
+
+
+        /* Technique Series */
+
+        /* test scroll bar */
+        .checkbox-all-technique {
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            padding: 0 19px;
+            height: 146px;
+            margin: 0 9px;
+            /* margin: 0 42px; */
+            /* border: solid 1px red; */
+        }
+
+        .checkbox-all-technique::-webkit-scrollbar {
+            width: 5px;
+            height: 8px;
+            background-color: #b4b4b4;
+        }
+
+        /* Add a thumb */
+        .checkbox-all-technique::-webkit-scrollbar-thumb {
+            background: #b4b4b4;
+        }
+
+        .checkbox-details input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        .checkbox {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option-product-detail-technique {
+            border: solid 1px rgb(106, 255, 0);
+        }
+
+        .head-option-product-technique {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 2px solid #EDEFF2;
+        }
+        .check-box-technique{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .checkbox-technique{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .text-check-label{
+            display: flex;
+            align-items: center;
+            line-height: 100%;
+        }
+
+       
+       
+
+
+        /* end test scroll bar */
+
+        /* End Technique Series */
+        /* Features */
+        .checkbox-all-features {
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            padding: 0 19px;
+            height: 146px;
+            margin: 0 9px;
+            /* margin: 0 42px; */
+            /* border: solid 1px red; */
+        }
+
+        .checkbox-all-features::-webkit-scrollbar {
+            width: 5px;
+            height: 8px;
+            background-color: #b4b4b4;
+        }
+
+        /* Add a thumb */
+        .checkbox-all-features::-webkit-scrollbar-thumb {
+            background: #b4b4b4;
+        }
+
+        .checkbox-details input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        .checkbox {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option-product-detail-features {
+            border: solid 1px rgb(106, 255, 0);
+        }
+
+        .head-option-product-features {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 2px solid #EDEFF2;
+        }
+        .check-box-features{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .checkbox-features{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .text-check-label{
+            display: flex;
+            align-items: center;
+            line-height: 100%;
+        }
+        /* end Features */
 
         /* end option-product  */
     </style>
@@ -477,7 +681,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" width: 100%; height: 100px; ">
             <div class="nav-brand">
                 <i class="fa fa-bars" aria-hidden="true" style="color: var(--grey-blue-75) ;"></i>
-                <img src="/DemoTemplateUseBoostrap/img/Constructor.png" alt="constructor">
+                <img src="img/Constructor.png" alt="constructor">
             </div>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -540,13 +744,13 @@
 
     <!-- page content -->
     <div class="page-content"
-        style="border: solid 1px green; width: 100%;height: 2235px; display: flex; flex-direction: row; align-items: flex-start; padding: 50px 0px 30px;margin-top: 11px;">
+        style="border: solid 1px green; width: 100%;display: flex; flex-direction: row; align-items: flex-start; padding: 50px 0px 30px;margin-top: 11px;">
         <aside
-            style="border: solid 1px purple; width: 310px; height: 1585px; display: flex; flex-direction: column; align-items: flex-start; padding: 0 5px 0 55px; gap: 30px ">
+            style="border: solid 1px purple; width: 310px; display: flex; flex-direction: column; align-items: flex-start; padding: 0 5px 0 55px; gap: 30px ">
             <div class="aside-icons"
                 style="display: flex;  flex-direction: column; align-items: center; padding: 25px; gap: 20px; width: 250px; height: 730px; background-color: #ffffff; box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03); border-radius: 10px; ">
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Speakers.png"
+                    <img class="background-color-img-icons" src="img/icons/Speakers.png"
                         alt="">
                     <div class="icons-img" style="width: 50px;">
                         Speakers
@@ -554,7 +758,7 @@
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Equipment.png"
+                    <img class="background-color-img-icons" src="img/icons/Equipment.png"
                         alt="">
                     <div class="icons-img">
                         Equipment
@@ -562,7 +766,7 @@
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Controls.png"
+                    <img class="background-color-img-icons" src="img/icons/Controls.png"
                         alt="">
                     <div class="icons-img">
                         Controls
@@ -570,7 +774,7 @@
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Accessories.png"
+                    <img class="background-color-img-icons" src="img/icons/Accessories.png"
                         alt="">
                     <div class="icons-img">
                         Accessories
@@ -579,14 +783,14 @@
                 </div>
                 <div class="icons-content icons-size">
                     <img style="margin-left: 2px;" class="background-color-img-icons"
-                        src="/DemoTemplateUseBoostrap/img/icons/Audio.png" alt="">
+                        src="img/icons/Audio.png" alt="">
                     <div class="icons-img">
                         Audio
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Appliances.png"
+                    <img class="background-color-img-icons" src="img/icons/Appliances.png"
                         alt="">
                     <div class="icons-img">
                         Appliances
@@ -595,14 +799,14 @@
                 </div>
                 <div class="icons-content icons-size">
                     <img style="margin-left: -2px;" class="background-color-img-icons"
-                        src="/DemoTemplateUseBoostrap/img/icons/TelevisionSet.png" alt="">
+                        src="img/icons/TelevisionSet.png" alt="">
                     <div class="icons-img">
                         Television Set
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/DigitalWatch.png"
+                    <img class="background-color-img-icons" src="img/icons/DigitalWatch.png"
                         alt="">
                     <div class="icons-img">
                         Digital Watch
@@ -611,21 +815,21 @@
                 </div>
                 <div class="icons-content icons-size">
                     <img style="margin-left: -2px;" class="background-color-img-icons"
-                        src="/DemoTemplateUseBoostrap/img/icons/VideoGames.png" alt="">
+                        src="img/icons/VideoGames.png" alt="">
                     <div class="icons-img">
                         Video Games
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Tablets.png" alt="">
+                    <img class="background-color-img-icons" src="img/icons/Tablets.png" alt="">
                     <div class="icons-img">
                         Tablets
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Accessories2.png"
+                    <img class="background-color-img-icons" src="img/icons/Accessories2.png"
                         alt="">
                     <div class="icons-img">
                         Accessories
@@ -633,7 +837,7 @@
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Computers.png"
+                    <img class="background-color-img-icons" src="img/icons/Computers.png"
                         alt="">
                     <div class="icons-img">
                         Computers
@@ -641,7 +845,7 @@
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
-                    <img class="background-color-img-icons" src="/DemoTemplateUseBoostrap/img/icons/Laptops.png" alt="">
+                    <img class="background-color-img-icons" src="img/icons/Laptops.png" alt="">
                     <div class="icons-img">
                         Laptops
                     </div>
@@ -649,7 +853,7 @@
                 </div>
                 <div class="icons-content icons-size">
                     <img style="margin-left: 5px;" class="background-color-img-icons"
-                        src="/DemoTemplateUseBoostrap/img/icons/Smartphones.png" alt="">
+                        src="img/icons/Smartphones.png" alt="">
                     <div class="icons-img">
                         Smartphones
                     </div>
@@ -659,33 +863,33 @@
             </div>
             <div class="product-img">
                 <div class="title-product-img" style="font-size: 2rem;">The New Smart Watches</div>
-                <img src="/DemoTemplateUseBoostrap/img/icons/theNewWatch.png" alt="">
+                <img src="img/icons/theNewWatch.png" alt="">
                 <button class="btn-product-img"> View More</button>
             </div>
             <div class="product-img">
-                <img src="/DemoTemplateUseBoostrap/img/icons/NewTabletsSamsung.png" alt="">
+                <img src="img/icons/NewTabletsSamsung.png" alt="">
                 <div class="title-product-img" style="font-size: 2rem;">New Tablets Samsung</div>
             </div>
         </aside>
 
 
-        <div class="main-content" style="border: 1px solid black; margin: 0 90px;">
+        <div class="main-content" style="border: 1px solid black; padding: 0 90px; ">
             <div class="head-main-content">
                 <div class="breadcrumb">
-                    <div class="detail-breadcrumb" style="font-size: 2rem;">
-                        Main <img class="icons-dot" src="/DemoTemplateUseBoostrap/img/icons/dot.png" alt=""> Tablets
+                    <div class="detail-breadcrumb" style="font-size: 1.5rem;">
+                        Main <img class="icons-dot" src="img/icons/dot.png" alt=""> Tablets
                     </div>
-                    <div class="icons-breadcrumb" style="font-size: 2rem;">
+                    <div class="icons-breadcrumb" style="font-size: 1.5rem;">
                         <div> <i class="fa fa-bar-chart" aria-hidden="true"></i> Compare</div>
                         <div> <i class="fa fa-line-chart" aria-hidden="true"></i> Price Drop</div>
 
                     </div>
                 </div>
-                <div class="option-main-content" style="font-size: 3rem;">
+                <div class="option-main-content" style="font-size: 2rem;">
                     <div class="title-main-content" style="font-weight: 500; color: #4D5E80;">
                         Apple Pro Display XDR
                     </div>
-                    <div class="option" style="font-size: 3rem;">
+                    <div class="option" style="font-size: 2rem;">
                         <div class="option-child">
                             <div>Sort By:</div>
                             <div>Popularity</div>
@@ -701,16 +905,15 @@
 
                 </div>
             </div>
-            <div class="product-main-content row"
-                style="border: solid 1px red;  width: 1116px; height: 500px; margin: 0;">
+            <div class="product-main-content row" style="border: solid 1px red;  width: 100%;  margin: 0;">
                 <div class="detail-product-main-content  row col-md-9 "
                     style="border: solid 1px yellow; display: flex; justify-content: space-between; gap:10px">
                     <div class="row" style=" padding: 0;  margin: 0; margin-bottom: 73px;">
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -720,8 +923,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -731,8 +934,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -745,8 +948,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -756,8 +959,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -767,44 +970,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
-                                    <p>LAPTOPS</p>
-                                    <b>Apple Mac Book Pro</b>
-                                    <p>$950.00</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row" style=" padding: 0;  margin: 0;margin-bottom: 73px;">
-                        <div class="product-items col-md-4" style="height: 265px; padding:0;">
-                            <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
-                                <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
-                                    <p>LAPTOPS</p>
-                                    <b>Apple Mac Book Pro</b>
-                                    <p>$950.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-items col-md-4" style="height: 265px; padding:0;">
-                            <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
-                                <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                <div class="detail-product" >
-                                    <p>LAPTOPS</p>
-                                    <b>Apple Mac Book Pro</b>
-                                    <p>$950.00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-items col-md-4" style="height: 265px; padding:0;">
-                            <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
-                                <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -817,8 +984,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -828,8 +995,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -839,8 +1006,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -853,8 +1020,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -864,8 +1031,8 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -875,8 +1042,44 @@
                         <div class="product-items col-md-4" style="height: 265px; padding:0;">
                             <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
                                 <img class="product-main-img" style="width: 83%; height: 100px;"
-                                    src="/DemoTemplateUseBoostrap/img/product-items/LaptopsNew.png" alt="">
-                                    <div class="detail-product" >
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
+                                    <p>LAPTOPS</p>
+                                    <b>Apple Mac Book Pro</b>
+                                    <p>$950.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row" style=" padding: 0;  margin: 0;margin-bottom: 73px;">
+                        <div class="product-items col-md-4" style="height: 265px; padding:0;">
+                            <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
+                                <img class="product-main-img" style="width: 83%; height: 100px;"
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
+                                    <p>LAPTOPS</p>
+                                    <b>Apple Mac Book Pro</b>
+                                    <p>$950.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items col-md-4" style="height: 265px; padding:0;">
+                            <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
+                                <img class="product-main-img" style="width: 83%; height: 100px;"
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
+                                    <p>LAPTOPS</p>
+                                    <b>Apple Mac Book Pro</b>
+                                    <p>$950.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-items col-md-4" style="height: 265px; padding:0;">
+                            <div style="background-color: #ffffff; border: solid 1px red; width: 93%;">
+                                <img class="product-main-img" style="width: 83%; height: 100px;"
+                                    src="img/product-items/LaptopsNew.png" alt="">
+                                <div class="detail-product">
                                     <p>LAPTOPS</p>
                                     <b>Apple Mac Book Pro</b>
                                     <p>$950.00</p>
@@ -894,61 +1097,54 @@
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="detail-option-brand">
-                            <div class="checkbox-left-brand" style="font-size: 3.5rem;  ">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            >
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Apple
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            checked>
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            BQ
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            >
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Meizu
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            >
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Samsung
-                                        </label>
-                                    </div>
-                            </div>
-                            <div class="checkbox-right-brand" style="font-size: 3.5rem; ">
+                            <div class="checkbox-left-brand" style="font-size: 2rem;  ">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Apple
+                                    </label>
+                                </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        BQ
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Meizu
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Samsung
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="checkbox-right-brand" style="font-size: 2rem; ">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Alcatel
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Honor
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         OnePlus
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         ZTE
                                     </label>
@@ -964,53 +1160,48 @@
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="detail-option-memory">
-                            <div class="checkbox-left-memory" style="font-size: 3.5rem;  ">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            >
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            8 GB
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            checked>
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            32 GB
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                            >
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            128 GB
-                                        </label>
-                                    </div>
-                                    
-                            </div>
-                            <div class="checkbox-right-memory" style="font-size: 3.5rem; ">
+                            <div class="checkbox-left-memory" style="font-size: 2rem;  ">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        8 GB
+                                    </label>
+                                </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        32 GB
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        128 GB
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="checkbox-right-memory" style="font-size: 2rem; ">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         16 GB
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         64 GB
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        >
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         256 GB
                                     </label>
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -1021,7 +1212,7 @@
                             <div>Price</div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="range" style="width: 200px; position: absolute; left: 41px; top: 88px; ">
+                        <div class="range" style="width: 70% ">
                             <div class="range-slider">
                                 <span class="range-selected"></span>
                             </div>
@@ -1029,7 +1220,7 @@
                                 <input type="range" class="min" min="0" max="1000" value="300" step="5">
                                 <input type="range" class="max" min="0" max="1000" value="700" step="5">
                             </div>
-                            <div class="range-price" style="font-size: 2rem;">
+                            <div class="range-price" style="font-size: 1rem;">
                                 <!-- <label for="min"></label> -->
                                 <input name="min" value="$300">
                                 <!-- <label for="max"></label> -->
@@ -1038,22 +1229,248 @@
                         </div>
                     </div>
                     <!-- End Price -->
+                    <!-- Color -->
                     <div class="option-product-detail-color" style="font-size: 3.5rem; ">
                         <div class="head-option-product-color">
                             <div>Color</div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="color-detail-all"  >
-                            <div class="row-color-first"style="font-size: 2rem;" >
-                                <span style="background-color: #1b53c0; border-radius: 50%;  width: 50px;height: 50px; display: inline-block;"></span>
-                                <p>blue</p>
+                        <div class="color-detail-all">
+                            <div class="row-color-one" style="font-size: 3rem;">
+                                <div style="">
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                            </div>
+                            <div class="row-color-two" style="font-size: 3rem;">
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                            </div>
+                            <div class="row-color-three" style="font-size: 3rem;">
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                            </div>
+                            <div class="row-color-four" style="font-size: 3rem;">
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
+                                <div>
+                                    <span
+                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
+                                    <p>blue</p>
+                                </div>
                             </div>
 
                         </div>
 
                     </div>
+                    <!-- End Color -->
+
+                    <!-- Technique Series -->
+                    <div class="option-product-detail-technique">
+                        <div class="head-option-product-technique" style="font-size: 2rem;">
+                            <div>Technique Series </div>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="checkbox-all-technique" style="font-size: 5rem;  ">
+                            <div class="checkbox-technique">
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label text-check-label" for="flexCheckDefault">
+                                            iPad Pro
+                                        </label>
+                                        <label > 10</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Media Pad
+                                        </label>
+                                        <label > 2</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            iPad mini
+                                        </label>
+                                        <label > 4</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Galaxy Tab S
+                                        </label>
+                                        <label > 14</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Galaxy Tab A
+                                        </label>
+                                        <label > 12</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Muze
+                                        </label>
+                                        <label > 7</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            iPad Pro
+                                        </label>
+                                        <label > test</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            iPad Pro
+                                        </label>
+                                        <label > test</label>
+                                    </div>
+                                    <div class="form-check check-box-technique" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            iPad Pro
+                                        </label>
+                                        <label > test</label>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Technique Series -->
+
+                    <!-- Features -->
+                    <div class="option-product-detail-features">
+                        <div class="head-option-product-features" style="font-size: 2rem;">
+                            <div>Features </div>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="checkbox-all-features" style="font-size: 5rem;  ">
+                            <div class="checkbox-features">
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label text-check-label" for="flexCheckDefault">
+                                            Calorie monitoring
+                                        </label>
+                                        <label > </label>
+                                    </div>
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sleep Monitoring
+                                        </label>
+                                        <label > <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                    </div>
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Physical activity
+                                        </label>
+                                        <label > </label>
+                                    </div>
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Pulse Measurement
+                                        </label>
+                                        <label > <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                    </div>
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Stopwatch
+                                        </label>
+                                        <label > </label>
+                                    </div>
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Timer
+                                        </label>
+                                        <label ></label>
+                                    </div>
+                                    <div class="form-check check-box-features" >
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            iPad Pro
+                                        </label>
+                                        <label > </label>
+                                    </div>
+                                    
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end features -->
                 </div>
-                
+
             </div>
         </div>
 
