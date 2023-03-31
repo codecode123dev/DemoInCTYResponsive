@@ -25,7 +25,14 @@
 
         }
 
-        /* nav */
+        /*  header nav */
+        .header{
+            width: 100%;
+            border-bottom: 2px solid #EDEFF2;
+        }
+        .navbar{
+            width: 100%;
+        }
         .nav-brand {
             margin-left: 4%;
             width: 12%;
@@ -34,6 +41,7 @@
 
         .navbar .fa-bars {
             font-size: 1.5rem;
+            color: var(--grey-blue-75) ;
         }
 
         img {
@@ -95,6 +103,19 @@
             top: 47px;
 
         }
+        div .nav-content{
+            line-height:30px; 
+            color: #6B7A99; 
+            font-weight: 700;
+        }
+        /* .dropdown div .nav-item{
+            line-height:30px; 
+            color: #6B7A99; 
+            font-weight: 700;
+        } */
+        .dropdown .nav .fa-chevron-down{
+            margin-left: 4px;
+        }
 
         /* end nav */
 
@@ -136,7 +157,6 @@
 
         div.icons-size {
             width: 200px;
-            height: 30px;
         }
 
         /* end aside */
@@ -148,12 +168,12 @@
             align-items: center;
             border: 2px solid #EDEFF2;
             border-radius: 10px;
-            width: 250px;
-            height: 445px;
+            width: 225px;
             /* align-items: center; */
             padding: 40px 10px;
+            margin-right: 5px;
             gap: 40px;
-            background-color: #ffffff;
+            background-color: #EDEFF2;
 
         }
 
@@ -168,7 +188,7 @@
         }
 
         .title-product-img {
-            background: #ffffff;
+            background: #EDEFF2;
             width: 140px;
             text-align: center;
             font-family: 'Roboto';
@@ -177,12 +197,22 @@
         }
 
         .product-img>img {
-            background-color: #ffffff;
+            background-color: #EDEFF2;
         }
 
         /* End Product below aSide */
 
+        /* Page content */
+        .page-content .background-color-icons{
+            background-color: #fff;
+        }
+        /* end Page content */
+
         /* Main content  */
+        .detail-breadcrumb{
+            font-size: 1.2rem;
+        }
+
         .head-main-content {
             width: 100%;
             display: flex;
@@ -210,6 +240,7 @@
             /* justify-content: flex-end; */
             gap: 40px;
             padding: 0;
+            font-size: 1.5rem;
         }
 
         .option-main-content {
@@ -288,6 +319,22 @@
             margin-top: 45px;
             margin-bottom: 30px;
         }
+        .btn-detail{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 11px;
+        }
+
+        .btn-show-more{
+            background-color: var(--grey-blue-70);
+            border: 2px solid #EDEFF2;
+            color: #6B7A99;
+            border-radius: 30px;
+            font-family: Roboto;
+        }
+
+        
 
         /* end product-main-content */
         /* option-product */
@@ -303,6 +350,9 @@
             display: flex;
             flex-direction: column;
             height: 314px;
+            border: solid 1px blue;
+            width: 100%; 
+            font-size: 1.5rem;
         }
 
         .head-option-product-brand {
@@ -318,6 +368,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            font-size: 2rem;
 
         }
 
@@ -334,6 +385,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            font-size: 2rem;
         }
 
         /* end brand */
@@ -359,12 +411,14 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            font-size: 2rem;
         }
 
         .checkbox-left-memory {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            font-size: 2rem;
         }
 
         /* end Memory */
@@ -377,6 +431,7 @@
         /* range two  input */
         .range {
             margin-top: 20px;
+            width: 70% ;
         }
 
         .range-slider {
@@ -441,6 +496,7 @@
             justify-content: center;
             align-items: center;
             position: absolute;
+            font-size: 1rem;
         }
 
         .range-price label {
@@ -459,6 +515,7 @@
         .option-product-detail-price {
             height: 200px;
             border: solid 1px green;
+            font-size: 3.5rem; position: relative;
         }
 
         .head-option-product-price {
@@ -478,6 +535,7 @@
             flex-direction: column;
             /* height: 300px; */
             border: solid 1px rgb(157, 0, 255);
+            font-size: 3.5rem;
         }
 
         .head-option-product-color {
@@ -491,8 +549,15 @@
 
         .color-detail-all {
             /* display: flex; */
-            padding: 25px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 2%;
             /* border: solid 1px red; */
+        }
+        .color-detail-all p{
+            margin: 0;
+            padding:  0;
         }
 
         .row-color-one {
@@ -500,8 +565,7 @@
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
-            /* gap: 10%; */
-            /* padding: 25px; */
+            font-size: 2.3rem;
 
         }
 
@@ -510,6 +574,9 @@
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
+            font-size: 2.3rem;
+            gap: 16%;
+
             /* gap: 10%; */
             /* padding: 25px; */
 
@@ -520,6 +587,7 @@
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
+            font-size: 2.3rem;
             /* gap: 10%; */
             /* padding: 25px; */
 
@@ -587,6 +655,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            font-size: 1.6rem;
             
         }
         .checkbox-technique{
@@ -655,12 +724,14 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            font-size: 1.6rem;
             
         }
         .checkbox-features{
             display: flex;
             flex-direction: column;
             gap: 10px;
+           
         }
 
         .text-check-label{
@@ -671,26 +742,176 @@
         /* end Features */
 
         /* end option-product  */
+
+        /* footer */
+        .img-footer img{
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer .all-information-detail{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 60px 80px 0 80px;
+        }
+        .footer .address-information{
+            margin-top:40px;
+        }
+        .footer .address-information p{
+            color: #ADB8CC;
+        }
+        .footer .information-detail-fourth p{
+            color: #ADB8CC;
+
+        }
+        /* end footer */
+
+        /* header */
+        .option-main-content .title-main-content{
+            font-weight: 500; color: #4D5E80;
+            font-size: 2.2rem;
+        }
+
+        /* .option .option-child{
+            font-size: 1.5rem;
+        } */
+
+        .option-product-detail-brand .head-option-product-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+
+        .row-color-one .style-color-one{ 
+            background-color: #1b53c0;
+            border-radius: 50%;
+            width: 20px;
+            height : 20px;
+            display: inline-block;
+        }
+        .row-color-one div{
+            text-align: center;
+        }
+        .style-color-two{
+            background-color: #1b53c0;
+            border-radius: 50%;  
+            width: 20px;
+            height : 20px; 
+            display: inline-block;
+        }
+        .row-color-two div{
+            text-align: center;
+            
+        }
+        .style-color-three{
+            background-color: #1b53c0;
+            border-radius: 50%;
+            width: 20px;
+            height : 20px;
+            display: inline-block;
+        }
+
+        .row-color-three div{
+            text-align: center;
+        }
+
+        .option-product-detail-memory .head-option-product-memory{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .option-product-detail-price .head-option-product-price{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .option-product-detail-color .head-option-product-color{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .option-product-detail-technique .head-option-product-technique {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .option-product-detail-features .head-option-product-features{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .option-product-detail-memory{
+            border: solid 1px blue; 
+            width: 100%; 
+            font-size: 4rem; 
+            position: relative;
+        }
+
+        .input-range-price{
+            border:solid 1px #EDEFF2;
+        }
+        .checkbox-left-brand .form-check{
+            font-size: 1.5rem;
+        }
+        .checkbox-right-brand .form-check{
+            font-size: 1.5rem;
+        }
+        .checkbox-left-memory .form-check{
+            font-size: 1.5rem;
+        }
+        .checkbox-right-memory .form-check{
+            font-size: 1.5rem;
+        }
+        .option-child-detail {
+            display: flex; 
+            align-items: center;
+        }
+        .option-child-detail p{
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+        }
+        .icons-option .option-child i{
+            font-size: 1.3rem;
+        }
+
+        .product-img .title-product-img{
+            font-size: 1.6rem;
+        }
+        /* .row-color-one .style-color-purple{
+            color: #8833FF;
+        }
+        .row-color-one .style-color-black{
+            color: #000;
+        }
+        .row-color-one .style-color-red{
+            color: #E62E2E;
+        }
+        .row-color-one .style-color-orange{
+            color: #FF6633;
+        } */
+        /* end header */
     </style>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header" style="width: 100%; height: 90px;">
+    <header class="header" >
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" width: 100%; height: 100px; ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="nav-brand">
-                <i class="fa fa-bars" aria-hidden="true" style="color: var(--grey-blue-75) ;"></i>
-                <img src="img/Constructor.png" alt="constructor">
+                <i class="fa fa-bars" aria-hidden="true" ></i>
+                <img src="img/icons/Constructor.png" alt="constructor">
             </div>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <div class="dropdown">
-
-                        <div class="nav-item nav-link  " data-toggle="dropdown" aria-haspopup="true"
-                            style="line-height:30px; color: #6B7A99; font-weight: 700;">Today’s Deals
-                            <i class="fa fa-chevron-down" aria-hidden="true" style="margin-left: 4px;"></i>
+                        <div class="nav-item nav-link nav-content  " data-toggle="dropdown" aria-haspopup="true" style="line-height:30px; color: #6B7A99; font-weight: 700;"
+                            >
+                            Today’s Deals
+                            <!-- need p element to change color -->
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -744,11 +965,11 @@
 
     <!-- page content -->
     <div class="page-content"
-        style="border: solid 1px green; width: 100%;display: flex; flex-direction: row; align-items: flex-start; padding: 50px 0px 30px;margin-top: 11px;">
+        style=" width: 100%;display: flex; flex-direction: row; align-items: flex-start; padding: 50px 0px 30px;">
         <aside
-            style="border: solid 1px purple; width: 310px; display: flex; flex-direction: column; align-items: flex-start; padding: 0 5px 0 55px; gap: 30px ">
+            style="border: solid 1px purple; width: 295px; display: flex; flex-direction: column; align-items: flex-start; padding: 0 0 0 55px; gap: 30px ">
             <div class="aside-icons"
-                style="display: flex;  flex-direction: column; align-items: center; padding: 25px; gap: 20px; width: 250px; height: 730px; background-color: #ffffff; box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03); border-radius: 10px; ">
+                style="display: flex;  flex-direction: column; align-items: center; padding: 25px; gap: 20px; width: 226px;  background-color: #ffffff; box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03); border-radius: 10px; ">
                 <div class="icons-content icons-size">
                     <img class="background-color-img-icons" src="img/icons/Speakers.png"
                         alt="">
@@ -862,13 +1083,13 @@
 
             </div>
             <div class="product-img">
-                <div class="title-product-img" style="font-size: 2rem;">The New Smart Watches</div>
+                <div class="title-product-img">The New Smart Watches</div>
                 <img src="img/icons/theNewWatch.png" alt="">
                 <button class="btn-product-img"> View More</button>
             </div>
             <div class="product-img">
                 <img src="img/icons/NewTabletsSamsung.png" alt="">
-                <div class="title-product-img" style="font-size: 2rem;">New Tablets Samsung</div>
+                <div class="title-product-img" >New Tablets Samsung</div>
             </div>
         </aside>
 
@@ -876,30 +1097,47 @@
         <div class="main-content" style="border: 1px solid black; padding: 0 90px; ">
             <div class="head-main-content">
                 <div class="breadcrumb">
-                    <div class="detail-breadcrumb" style="font-size: 1.5rem;">
+                    <div class="detail-breadcrumb">
                         Main <img class="icons-dot" src="img/icons/dot.png" alt=""> Tablets
                     </div>
-                    <div class="icons-breadcrumb" style="font-size: 1.5rem;">
+                    <div class="icons-breadcrumb">
                         <div> <i class="fa fa-bar-chart" aria-hidden="true"></i> Compare</div>
                         <div> <i class="fa fa-line-chart" aria-hidden="true"></i> Price Drop</div>
 
                     </div>
                 </div>
                 <div class="option-main-content" style="font-size: 2rem;">
-                    <div class="title-main-content" style="font-weight: 500; color: #4D5E80;">
+                    <div class="title-main-content">
                         Apple Pro Display XDR
                     </div>
                     <div class="option" style="font-size: 2rem;">
                         <div class="option-child">
-                            <div>Sort By:</div>
-                            <div>Popularity</div>
-                            <div id="new">New</div>
-                            <div>Price</div>
-                            <div>Rating</div>
+                            <div class="option-child-detail" >
+                                <p>Sort By:</p>
+                            </div>
+                            <div class="option-child-detail">
+                                <p>Popularity</p>
+                            </div>
+                            <div  class="option-child-detail">
+                                <p id="new">
+                                    New
+                                </p>
+                            
+                            </div>
+                            <div class="option-child-detail">
+                                <p>Price</p>
+                            </div>
+                            <div class="option-child-detail">
+                                <p>Rating</p>
+                            </div>
                         </div>
                         <div class="icons-option">
-                            <i class="fa fa-th" aria-hidden="true" style="color: #3361FF;"></i>
-                            <i class="fa fa-list" aria-hidden="true"></i>
+                            <div class="option-child-detail">
+                                <i class="fa fa-th" aria-hidden="true" style="color: #3361FF;"></i>
+                            </div>
+                            <div class="option-child-detail">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
 
@@ -1088,16 +1326,16 @@
                         </div>
 
                     </div>
+                    <div class="btn-detail"><button class="btn btn-primary btn-show-more" type="submit">Show More</button></div>
                 </div>
                 <div class="option-product col-md-3" style="border: solid 1px rgb(17, 255, 0); margin: 0; padding: 0;">
-                    <div class="option-product-detail-brand"
-                        style="border: solid 1px blue; width: 100%; font-size: 4rem;">
+                    <div class="option-product-detail-brand" >
                         <div class="head-option-product-brand">
                             <div>Brand </div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="detail-option-brand">
-                            <div class="checkbox-left-brand" style="font-size: 2rem;  ">
+                            <div class="checkbox-left-brand">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
@@ -1124,7 +1362,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="checkbox-right-brand" style="font-size: 2rem; ">
+                            <div class="checkbox-right-brand" >
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
@@ -1153,14 +1391,13 @@
                         </div>
                     </div>
                     <!-- Memory -->
-                    <div class="option-product-detail-memory"
-                        style="border: solid 1px blue; width: 100%; font-size: 4rem; position: relative;">
+                    <div class="option-product-detail-memory" >
                         <div class="head-option-product-memory">
                             <div>Memory </div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="detail-option-memory">
-                            <div class="checkbox-left-memory" style="font-size: 2rem;  ">
+                            <div class="checkbox-left-memory" >
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
@@ -1182,7 +1419,7 @@
                                 </div>
 
                             </div>
-                            <div class="checkbox-right-memory" style="font-size: 2rem; ">
+                            <div class="checkbox-right-memory" >
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
@@ -1201,18 +1438,17 @@
                                         256 GB
                                     </label>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                     <!-- end memory -->
                     <!-- Price -->
-                    <div class="option-product-detail-price" style="font-size: 3.5rem; position: relative;">
+                    <div class="option-product-detail-price" >
                         <div class="head-option-product-price">
                             <div>Price</div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="range" style="width: 70% ">
+                        <div class="range" >
                             <div class="range-slider">
                                 <span class="range-selected"></span>
                             </div>
@@ -1220,110 +1456,93 @@
                                 <input type="range" class="min" min="0" max="1000" value="300" step="5">
                                 <input type="range" class="max" min="0" max="1000" value="700" step="5">
                             </div>
-                            <div class="range-price" style="font-size: 1rem;">
-                                <!-- <label for="min"></label> -->
-                                <input name="min" value="$300">
-                                <!-- <label for="max"></label> -->
-                                <input name="max" value="$700">
+                            <div class="range-price">
+                                <!-- <label for="min"> -->
+
+                                    <input type="text" class="input-range-price" name="min" value="$300" placeholder="" />
+                                <!-- </label> -->
+                                <!-- <label for="max"> -->
+                                    <input type="text" class="input-range-price" name="max" value="$700" placeholder=""  />
+
+                                <!-- </label> -->
                             </div>
                         </div>
                     </div>
                     <!-- End Price -->
                     <!-- Color -->
-                    <div class="option-product-detail-color" style="font-size: 3.5rem; ">
+                    <div class="option-product-detail-color" >
                         <div class="head-option-product-color">
                             <div>Color</div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="color-detail-all">
-                            <div class="row-color-one" style="font-size: 3rem;">
-                                <div style="">
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                            <div class="row-color-one" >
+                                <div >
+                                    <span class="style-color-one style-color-purple"
+                                        ></span>
+                                    <p>Purple</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-one style-color-black"
+                                        ></span>
+                                    <p>Black</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-one style-color-red" 
+                                        ></span>
+                                    <p>Red</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-one style-color-orange"
+                                        ></span>
+                                    <p>Orange</p>
                                 </div>
                             </div>
-                            <div class="row-color-two" style="font-size: 3rem;">
+                            <div class="row-color-two" >
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-two style-color-blue"
+                                        ></span>
+                                    <p>Blue</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-two style-color-white"
+                                        ></span>
+                                    <p>White</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-two style-color-brown"
+                                        ></span>
+                                    <p>Brown</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
-                                </div>
-                            </div>
-                            <div class="row-color-three" style="font-size: 3rem;">
-                                <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
-                                </div>
-                                <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
-                                </div>
-                                <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
-                                </div>
-                                <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-two style-color-green"
+                                        ></span>
+                                    <p>Green</p>
                                 </div>
                             </div>
-                            <div class="row-color-four" style="font-size: 3rem;">
+                            <div class="row-color-three" >
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-three style-color-yellow"
+                                        ></span>
+                                    <p>Yellow</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-three style-color-gray"
+                                       ></span>
+                                    <p>Gray</p>
                                 </div>
                                 <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                    <span class="style-color-three style-color-pink"
+                                        ></span>
+                                    <p>Pink</p>
                                 </div>
-                                <div>
-                                    <span
-                                        style="background-color: #1b53c0; border-radius: 50%;  width: 100%;height : 38%; display: inline-block;"></span>
-                                    <p>blue</p>
+                                <div> 
+                                    <span class="style-color-three style-color-light-blue"
+                                        ></span>
+                                    <p>Blue</p>
                                 </div>
                             </div>
+                            
 
                         </div>
 
@@ -1332,7 +1551,7 @@
 
                     <!-- Technique Series -->
                     <div class="option-product-detail-technique">
-                        <div class="head-option-product-technique" style="font-size: 2rem;">
+                        <div class="head-option-product-technique" >
                             <div>Technique Series </div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
@@ -1408,7 +1627,7 @@
 
                     <!-- Features -->
                     <div class="option-product-detail-features">
-                        <div class="head-option-product-features" style="font-size: 2rem;">
+                        <div class="head-option-product-features">
                             <div>Features </div>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
@@ -1419,7 +1638,6 @@
                                         <label class="form-check-label text-check-label" for="flexCheckDefault">
                                             Calorie monitoring
                                         </label>
-                                        <label > </label>
                                     </div>
                                     <div class="form-check check-box-features" >
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
@@ -1433,7 +1651,6 @@
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Physical activity
                                         </label>
-                                        <label > </label>
                                     </div>
                                     <div class="form-check check-box-features" >
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -1447,24 +1664,13 @@
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Stopwatch
                                         </label>
-                                        <label > </label>
                                     </div>
                                     <div class="form-check check-box-features" >
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Timer
                                         </label>
-                                        <label ></label>
                                     </div>
-                                    <div class="form-check check-box-features" >
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            iPad Pro
-                                        </label>
-                                        <label > </label>
-                                    </div>
-                                    
-                                    
                             </div>
                         </div>
                     </div>
@@ -1481,7 +1687,54 @@
 
 
     <!-- footer -->
-    <div class="footer" style="border: solid 1px yellow; width: 100%; height: 150px;">
+    <div class="footer" style="border: solid 1px yellow; width: 100%;">
+        <div class="all-information-detail">
+            <div class="footer-constructor">
+                <div class="img-footer">
+                    <img src="img/icons/Constructor.png" alt="">
+                </div>
+                <div class="address-information" style="font-size: 2rem;">
+                    <p>12 Water St. Vacouver, BC
+                    </br>
+                        V6B 132 United States
+                    </p>
+                </div>
+            </div>
+            <div class="information-detail-first" style="font-size: 2rem;">
+                <p>Corporate sales</p>
+                <p>Feedback</p>
+                <p>Jobs</p>
+                <p>News</p>
+                <p>Sales Rules</p>
+                <p>For partners</p>
+            </div>
+
+            <div class="information-detail-second" style="font-size: 2rem;">
+                <p>Bonus program</p>
+                <p>Gift Cards</p>
+                <p>Bill Payment Verification</p>
+                <p>Loans</p>
+                <p>Delivery</p>
+                <p>Service centers</p>
+
+            </div>
+
+            <div class="information-detail-third" style="font-size: 2rem;">
+                <p>How to place an order</p>
+                <p>Ways of payment</p>
+                <p>Exchange and return of goods</p>
+                <p>Warranty service</p>
+                <p>Order status</p>
+                <p>Knowledge base</p>
+
+            </div>
+
+            <div class="information-detail-fourth" style="font-size: 2rem;">
+                <p>2023 Company. All Rights Reserved</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
 
     </div>
     <!-- End footer -->
