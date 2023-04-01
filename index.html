@@ -49,15 +49,19 @@
             padding-left: 12%;
         }
 
-        .navbar-nav .nav-item {
+        /* .navbar-nav .nav-item {
             font-size: 1.5rem;
             margin: 20px;
 
-        }
+        }  */
+       /* .navbar-nav .nav-item .nav-content-first{
+            font-size: 1.5rem;
+            margin: 20px;
+        } */
 
         div.search {
             font-size: 2rem;
-            margin-left: 48px;
+            /* margin-left: 48px; */
 
         }
 
@@ -70,14 +74,14 @@
 
         .right-icons {
             font-size: 3rem;
-            margin-left: 74px;
+            /* margin-left: 74px; */
+            width: 155px;
+            display: flex;
+            margin-right: 50px;
+            
         }
 
-        .navbar-collapse {
-            margin-left: 4%;
-
-        }
-
+    
         div.account-icons {
             margin-right: 10%;
         }
@@ -127,7 +131,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 0;
-            /* gap: 62px; */
             background-color: #ffffff;
 
         }
@@ -210,7 +213,7 @@
 
         /* Main content  */
         .detail-breadcrumb{
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         .head-main-content {
@@ -240,7 +243,7 @@
             /* justify-content: flex-end; */
             gap: 40px;
             padding: 0;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
         }
 
         .option-main-content {
@@ -869,7 +872,7 @@
         .option-child-detail p{
             margin: 0;
             padding: 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
         .icons-option .option-child i{
             font-size: 1.3rem;
@@ -878,18 +881,123 @@
         .product-img .title-product-img{
             font-size: 1.6rem;
         }
-        /* .row-color-one .style-color-purple{
-            color: #8833FF;
+        .icons-img p{
+            width: 100px; 
+            background-color: #fff; 
+            font-size: 1.3rem; 
+            margin: 0;
         }
-        .row-color-one .style-color-black{
-            color: #000;
+        .content-dropdown{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 21px;
         }
-        .row-color-one .style-color-red{
-            color: #E62E2E;
+        .dropdown{
+            display: flex;
+            align-items: center;
         }
-        .row-color-one .style-color-orange{
-            color: #FF6633;
-        } */
+        .content-dropdown-third{
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .content-dropdown-third:hover{
+            text-decoration: none;
+        }
+
+        
+        .content-dropdown-four{
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .content-dropdown-four:hover{
+            text-decoration: none;
+        }
+        .content-dropdown p{
+            font-size: 1.3rem;
+            padding :0;
+            margin: 0;
+            line-height:30px; 
+            color: #6B7A99; 
+            font-weight: 700; 
+        }
+
+        div .content-dropdown-third{
+            line-height:30px; 
+            color: #6B7A99; 
+            font-weight: 700; 
+            font-size: 1.3rem;
+        }
+        div .content-dropdown-four{
+            line-height:30px; 
+            color: #6B7A99; 
+            font-weight: 700; 
+            font-size: 1.4rem;
+        }
+        .navbar-collapse .navbar-nav{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            gap: 5%;
+        }
+       
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 21px 0;
+        }
+        .wrap-nav-content .navbar-nav{
+            display: flex;
+            gap: 35px;
+        }
+
+
+        .option-child-detail .fa-th{
+            color: #3361FF; 
+            font-size: 1.2rem;
+        }
+        .option-child-detail .fa-list{
+            font-size: 1.2rem;
+        }
+        .dropdown  .dropdown-menu{
+            font-size: 2rem;
+        }
+
+        .account .account-content{
+            line-height:30px;
+        }
+        .page-content{
+            width: 100%;
+            display: flex; 
+            flex-direction: row; 
+            align-items: flex-start; 
+            padding: 50px 0px 30px;
+        }
+        .aside{
+            border: solid 1px purple;
+            width: 295px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-start; 
+            padding: 0 0 0 55px; 
+            gap: 30px;
+        }
+
+        .aside .aside-icons{
+            display: flex;  
+            flex-direction: column; 
+            align-items: center; 
+            padding: 25px; 
+            gap: 20px; 
+            width: 226px;  
+            background-color: #ffffff; 
+            box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03); 
+            border-radius: 10px;
+        }
+       
         /* end header */
     </style>
 </head>
@@ -904,13 +1012,13 @@
                 <img src="img/icons/Constructor.png" alt="constructor">
             </div>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="wrap-nav-content"id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <div class="dropdown">
-                        <div class="nav-item nav-link nav-content  " data-toggle="dropdown" aria-haspopup="true" style="line-height:30px; color: #6B7A99; font-weight: 700;"
-                            >
-                            Today’s Deals
-                            <!-- need p element to change color -->
+                        <div class="content-dropdown" id="dropdownMenuButton" data-toggle="dropdown"  >
+                            <p >
+                                Today’s Deals
+                            </p>
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
 
@@ -921,9 +1029,11 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <div class="nav-item nav-link  " data-toggle="dropdown" aria-haspopup="true"
-                            style="line-height:30px; color: #6B7A99; font-weight: 700;">Best Sellers
-                            <i class="fa fa-chevron-down" aria-hidden="true" style="margin-left: 4px;"></i>
+                        <div class="content-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            <p >
+                                Best's Sellers
+                            </p>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Action</a>
@@ -932,28 +1042,30 @@
                         </div>
                     </div>
 
-                    <a class="nav-item nav-link" href="#"
-                        style="line-height:30px; color: #6B7A99; font-weight: 700;">Customer Service</a>
-                    <a class="nav-item nav-link " href="#"
-                        style="line-height:30px; color: #6B7A99; font-weight: 700;">New Releases</a>
+                    <div>
+                        <a class="content-dropdown-third" href="#" >Customer Service</a>
+                    </div>
+                    <div>
+                        <a class="content-dropdown-four " href="#">New Releases</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="search navbar-collapse">
+            <div class="search ">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <span style="line-height:30px">
                     Search Goods
                 </span>
             </div>
 
-            <div class="right-icons navbar-collapse">
+            <div class="right-icons ">
                 <div class="account">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <span class="account-content" style="line-height:30px">Account</span>
+                    <span class="account-content" >Account</span>
                 </div>
                 <div class="cart-icons">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span class="cart-content" style="line-height:30px">Bag</span>
+                    <span class="cart-content">Bag</span>
                 </div>
             </div>
         </nav>
@@ -964,17 +1076,16 @@
 
 
     <!-- page content -->
-    <div class="page-content"
-        style=" width: 100%;display: flex; flex-direction: row; align-items: flex-start; padding: 50px 0px 30px;">
-        <aside
-            style="border: solid 1px purple; width: 295px; display: flex; flex-direction: column; align-items: flex-start; padding: 0 0 0 55px; gap: 30px ">
-            <div class="aside-icons"
-                style="display: flex;  flex-direction: column; align-items: center; padding: 25px; gap: 20px; width: 226px;  background-color: #ffffff; box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03); border-radius: 10px; ">
+    <div class="page-content">
+        <aside class="aside">
+            <div class="aside-icons" >
                 <div class="icons-content icons-size">
                     <img class="background-color-img-icons" src="img/icons/Speakers.png"
                         alt="">
-                    <div class="icons-img" style="width: 50px;">
-                        Speakers
+                    <div class="icons-img" >
+                        <p>
+                            Speakers
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -982,7 +1093,9 @@
                     <img class="background-color-img-icons" src="img/icons/Equipment.png"
                         alt="">
                     <div class="icons-img">
-                        Equipment
+                        <p>
+                            Equipment
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -990,7 +1103,9 @@
                     <img class="background-color-img-icons" src="img/icons/Controls.png"
                         alt="">
                     <div class="icons-img">
-                        Controls
+                        <p >
+                            Controls
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -998,7 +1113,9 @@
                     <img class="background-color-img-icons" src="img/icons/Accessories.png"
                         alt="">
                     <div class="icons-img">
-                        Accessories
+                        <p>
+                            Accessories
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1006,7 +1123,9 @@
                     <img style="margin-left: 2px;" class="background-color-img-icons"
                         src="img/icons/Audio.png" alt="">
                     <div class="icons-img">
+                        <p>
                         Audio
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1014,7 +1133,9 @@
                     <img class="background-color-img-icons" src="img/icons/Appliances.png"
                         alt="">
                     <div class="icons-img">
-                        Appliances
+                        <p>
+                            Appliances
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1022,7 +1143,9 @@
                     <img style="margin-left: -2px;" class="background-color-img-icons"
                         src="img/icons/TelevisionSet.png" alt="">
                     <div class="icons-img">
+                        <p>
                         Television Set
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1030,7 +1153,9 @@
                     <img class="background-color-img-icons" src="img/icons/DigitalWatch.png"
                         alt="">
                     <div class="icons-img">
-                        Digital Watch
+                        <p>
+                            Digital Watch
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1038,14 +1163,18 @@
                     <img style="margin-left: -2px;" class="background-color-img-icons"
                         src="img/icons/VideoGames.png" alt="">
                     <div class="icons-img">
+                        <p>
                         Video Games
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
                     <img class="background-color-img-icons" src="img/icons/Tablets.png" alt="">
                     <div class="icons-img">
-                        Tablets
+                        <p>
+                            Tablets
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1053,7 +1182,9 @@
                     <img class="background-color-img-icons" src="img/icons/Accessories2.png"
                         alt="">
                     <div class="icons-img">
-                        Accessories
+                        <p >
+                            Accessories
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1061,14 +1192,18 @@
                     <img class="background-color-img-icons" src="img/icons/Computers.png"
                         alt="">
                     <div class="icons-img">
-                        Computers
+                        <p>
+                            Computers
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
                 <div class="icons-content icons-size">
                     <img class="background-color-img-icons" src="img/icons/Laptops.png" alt="">
                     <div class="icons-img">
-                        Laptops
+                        <p>
+                            Laptops
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1076,7 +1211,9 @@
                     <img style="margin-left: 5px;" class="background-color-img-icons"
                         src="img/icons/Smartphones.png" alt="">
                     <div class="icons-img">
-                        Smartphones
+                        <p>
+                            Smartphones
+                        </p>
                     </div>
                     <i class="fa fa-chevron-right background-color-icons" aria-hidden="true"></i>
                 </div>
@@ -1101,8 +1238,18 @@
                         Main <img class="icons-dot" src="img/icons/dot.png" alt=""> Tablets
                     </div>
                     <div class="icons-breadcrumb">
-                        <div> <i class="fa fa-bar-chart" aria-hidden="true"></i> Compare</div>
-                        <div> <i class="fa fa-line-chart" aria-hidden="true"></i> Price Drop</div>
+                        <div class="icons-breadcrumb-compare" style="display: flex; flex-direction: row; gap: 10px;"> 
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i> 
+                        <p style="font-size: 1rem;">
+                            Compare
+                        </p>
+                        </div>
+                        <div class="icons-breadcrumb-price" style="display: flex; flex-direction: row; gap: 10px;"> 
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> 
+                        <p style="font-size: 1rem;">
+                            Price Drop
+                        </p>
+                        </div>
 
                     </div>
                 </div>
@@ -1133,7 +1280,7 @@
                         </div>
                         <div class="icons-option">
                             <div class="option-child-detail">
-                                <i class="fa fa-th" aria-hidden="true" style="color: #3361FF;"></i>
+                                <i class="fa fa-th" aria-hidden="true" style="color: #3361FF; font-size: 1.2rem;"></i>
                             </div>
                             <div class="option-child-detail">
                                 <i class="fa fa-list" aria-hidden="true"></i>
