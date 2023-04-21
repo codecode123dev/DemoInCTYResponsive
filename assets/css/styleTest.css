@@ -44,6 +44,10 @@ body {
     justify-content: center;
 }
 
+.address-items-first:hover {
+    color: #ADB8CC;
+}
+
 /* html{
     background-color: var(--grey-blue-70);
 
