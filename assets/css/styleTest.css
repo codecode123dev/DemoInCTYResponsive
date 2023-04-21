@@ -44,10 +44,6 @@ body {
     justify-content: center;
 }
 
-.address-items-first:hover {
-    color: #ADB8CC;
-}
-
 /* html{
     background-color: var(--grey-blue-70);
 
@@ -1632,6 +1628,10 @@ img.img-constructor {
     padding: 70px;
     margin: 0;
 }
+.footer .address-information .address-items-first:hover {
+    color: #ADB8CC;
+}
+
 /* 1024px - 1150px */
 
 @media (max-width: 1150px) and (min-width: 1025px) {
