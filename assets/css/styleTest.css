@@ -1259,6 +1259,7 @@ div .content-dropdown-four {
 .page-content {
     display: flex;
     padding: 50px 0px 30px;
+    margin: 0;
     background-color: var(--grey-blue-70);
 }
 
@@ -1313,9 +1314,7 @@ img.img-constructor {
 
 /* main */
 
-main.main {
-    margin: 0 90px;
-}
+
 
 .icons-breadcrumb .icons-breadcrumb-compare {
     display: flex;
